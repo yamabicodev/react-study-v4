@@ -1,0 +1,33 @@
+/**
+* css modulesを使うにはnode-sassを追加する必要がある。
+* package.jsonにdepandencyを追加する。 例:"node-sass": "6.0.1",
+* cssファイル名はXXXX.module.sass or XXXX.module.scssになっていないといけない。
+*/
+
+.container {
+  border: solid 2px #5e5ca1;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  color: #5e835a;
+  font-weight: bolder;
+}
+
+.button {
+  padding: 10px;
+  margin: 0;
+  border-radius: 20px;
+  background-color: #d39908;
+  color: #ffffff;
+  &:hover {
+    opacity: 0.5;
+  }
+}
